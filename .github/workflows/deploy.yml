@@ -16,4 +16,4 @@ jobs:
           nekoweb-api-key: ${{ secrets.NEKOWEB_API_KEY }}
           nekoweb-domain: 'limbo-zone.nekoweb.org'
           nekoweb-username: 'limbo-zone'
-          directory: 'public'
+          directory: '/limbo-zone.nekoweb.org'
