@@ -1,0 +1,163 @@
+/* css on the archived sadgrl website (with a lot of edits) */
+
+::selection { color: white; background: #929F65; }
+
+/* scroll, box-sizing to include padding + border in an element's width/height -- future eva here wtf did i write */
+* {
+    scrollbar-width: thin;
+  	scrollbar-color: #929F65 #4E5146;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Comic Sans MS', sans-serif;
+    margin: 0;
+    color: #E6EBD7;
+    background-color: #0E100E;
+    background-image: url(images/missingHeavens.png); 
+    background-size: contain;
+}
+
+
+main {
+    max-width: 90%;
+    margin: 0 auto;
+    max-width: 75%;
+    padding: 60px;
+}
+
+a {
+    color: #83A51F;
+}
+
+a:hover {
+    color: #F6FF43;
+    font-weight: bold;
+}
+
+.container {
+    display: flex;
+}
+
+#header {
+    width: 100%;
+    height: 200px;
+    background-image: url(images/banners/mayBanner.png);
+    background-size: cover;
+    background-position: center;
+    position: relative; 
+}
+
+#navbar {
+    background-color: #0E100E;
+    margin:0 5%;
+    padding: 13px;
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    overflow-y: visible;
+}
+
+#navbar a {
+    color: #E6EBD7;
+    padding: 2px;
+    text-decoration: none;
+}
+
+#navbar a:hover {
+    color: #CAD7A6;
+}
+
+#navbar .collapseIcon {
+    display: none;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 1%;
+}
+
+footer {
+    background-color: #0E100E;
+    height: 110px;
+    padding: 15px;
+    margin: 60px 5%;
+    text-align: center;
+}
+
+h1 {
+    font-size: 25px;
+}
+
+strong {
+    color: #83A51F;
+}
+
+small {
+    color: #d6dbc7;
+    font-size: 10px;
+}
+
+.box {
+    background-color: #0e0f0e;
+    padding: 30px;
+    margin:10px;
+}
+
+@media only screen and (max-width: 600px) {
+
+    #header {
+        display: none;
+    }
+
+    #navbar {
+        justify-content: initial;
+        display: block;
+        height: 60px; 
+    }
+
+    #navbar .collapseIcon {
+        display: block;
+        position: absolute;
+        right: 15px;
+        top: 15px;
+        padding: 0px;
+    }
+
+    #navbar a {
+        padding: 20px;
+    }
+
+    .topnav a {
+        display: none;
+    }
+
+    .topnav.responsive {
+        position: relative;
+        height: 60px; 
+    }
+
+    .topnav.responsive .collapseIcon {
+        position: absolute;
+        right: 15px;
+        top: 15px;
+    }
+    
+    .topnav.responsive a {
+        display: block;
+        text-align: left;
+        background-color: #0E100E;
+        font-size: 18px;
+    }
+
+    main {
+        max-width: 100%;
+    }
+
+    .wrapper {
+        grid-template-columns: 100%;
+    }
+
+
+}
