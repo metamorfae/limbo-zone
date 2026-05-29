@@ -15,7 +15,9 @@ body {
     color: #E6EBD7;
     background-color: #0E100E;
     background-image: url(images/missingHeavens.png); 
-    background-size: contain;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 
@@ -75,8 +77,12 @@ a:hover {
 .wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    column-gap: 1%;
 }
+
+.wrapper2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    }
 
 footer {
     background-color: #0E100E;
@@ -115,6 +121,8 @@ small {
         justify-content: initial;
         display: block;
         height: 60px; 
+        max-width:100%;
+        margin:0;
     }
 
     #navbar .collapseIcon {
@@ -159,5 +167,7 @@ small {
         grid-template-columns: 100%;
     }
 
-
+    .wrapper2 {
+        grid-template-columns: 100%;
+    }
 }
